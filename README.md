@@ -9,6 +9,12 @@ NOTE: This gem is not published yet, but you can install it manually. Someday I 
 ### Manual install
 
 (1) downlod the source code and copy `app` folder to the `app` folder of your Rails project.
+Make sure the following files exist in your project:
+```ruby
+app/controllers/cxxes_controller.rb
+app/helpers/cxxes_helper.rb
+app/views/cxxes/index.h.erb
+```
 
 (2) add a route in config/routes.rb
 ``` ruby
