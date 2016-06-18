@@ -3,11 +3,9 @@ require 'active_record'
 require 'generators/sqlpp11gen/cxxes_context'
 require 'erb'
 
-#Dir[File.dirname(__FILE__) + '/sqlpp11gen/*.rb'].each {|file| require file }
-
 module Sqlpp11gen
   module Generators
-    class Sqlpp11genGenerator < Rails::Generators::NamedBase
+    class TabGenerator < Rails::Generators::NamedBase
 #      source_root File.expand_path('../templates', __FILE__)
 
       # Commandline options can be defined here using Thor-like options:
