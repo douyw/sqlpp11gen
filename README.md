@@ -72,10 +72,10 @@ Usage:
   rails generate sqlpp11gen:tab NAME [OUTPUT_PATH] [FILENAME_PREFIX] [FILENAME_EXT] [options]
 ```
 
--The `NAME` is neccessary, it's the name of your table you want to generate code from.
--`OUTPUT_PATH` allows you to specify the output path for the generated code. The default path is 'app/cxxes'.
--`FILENAME_PREFIX` allows you to append a filename prefix. The default one is 'tab_'.
--`FILENAME_EXT` allows you to choose the filename ext. The default one is 'hpp'.
+- The `NAME` is neccessary, it's the table name you want to generate code from.
+- `OUTPUT_PATH` allows you to specify the output path for the generated code. The default path is 'app/cxxes'.
+- `FILENAME_PREFIX` allows you to append a filename prefix. The default one is 'tab_'.
+- `FILENAME_EXT` allows you to choose the filename ext. The default one is 'hpp'.
 
 2) Run with one parameter
 
@@ -88,7 +88,7 @@ $ rails g sqlpp11gen:tab product
 
 ```
 $ rails g sqlpp11gen:tab product public/cxxes dom_ h
-   identical  public/cxxes/dom_product.h
+   created  public/cxxes/dom_product.h
 ```
 Now, you can use the generated files.
 
